@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:orientation="vertical">
+   
+   
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="Your Profile"
+      android:gravity="center"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:layout_marginTop="35dp"
+      />
+
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+       android:layout_marginTop="25dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="5dp"
+      android:theme="@style/card_design1">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:orientation="horizontal">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+            android:orientation="vertical">
+
+         <ImageView
+             android:id="@+id/profileimage"
+             android:layout_width="100dp"
+             android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher_round"
+             android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+           />
+
+            <TextView
+                android:id="@+id/editphoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:text="Edit"
+                android:layout_marginBottom="5dp"
+               android:textColor="#1E88E5"
+               android:gravity="center"/>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/namedata"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+               android:hint="Name"
+                android:layout_marginTop="27dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="10dp"
+                android:inputType="text"
+             />
+            <TextView
+                android:id="@+id/maildata"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Email"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textEmailAddress"
+                />
+            <TextView
+                android:id="@+id/phonedata"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Phone Number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                />
+
+
+         </LinearLayout>
+         
+
+
+      </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:layout_marginTop="35dp"
+       android:layout_marginLeft="25dp"
+       android:layout_marginRight="50dp"
+       android:background="@drawable/end_design"
+      android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="Change Password"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"
+         android:textSize="20sp"/>
+
+      <TextView
+          android:id="@+id/resetpass"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:text=">"
+         android:textSize="20dp"
+          android:layout_marginTop="10dp"
+         android:layout_marginLeft="90dp"/>
+
+
+
+   </LinearLayout>
+
+
+
+</LinearLayout>

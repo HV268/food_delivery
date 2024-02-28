@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="card_design1">
+        <item name="android:background">#F4A94B</item>
+    </style>
+    <style name="card_black">
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="card_design3">
+        <item name="android:background">#D6E7F1</item>
+    </style>
+
+
+</resources>

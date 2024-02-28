@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="532dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="Foody Express"
+        android:textColor="#E31212"
+        android:textSize="40dp"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="180dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/delivery1" />
+
+
+</RelativeLayout>
